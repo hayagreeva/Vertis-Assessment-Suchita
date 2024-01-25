@@ -1,0 +1,24 @@
+<sly data-sly-test="${wcmmode.edit}">
+   <div class="cq-placeholder cq-marker-start" data-emptytext="${component.name}"></div>
+</sly>
+<sly data-sly-use.clientlibs="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-call="${clientlibs.all @ categories='aemvertis.megamenu'}"></sly>
+</sly>
+
+<sly data-sly-use.megamenu="com.aemvertis.core.models.MegaMenuModel">
+   <nav>
+      <ul data-sly-list.items="${megamenu.menuListPojo}">
+         <li>
+            <a href="${items.menuLink @ extension='html'}">${items.menuTitle}</a>
+            <ul data-sly-list.subItems="${items.childPageList}">
+               <li>
+                  <a href="${subItems.menuLink @ extension='html'}">${subItems.menuTitle}</a>
+                  <ul data-sly-list.childsubItems="${subItems.childPageList}">
+                     <li><a href="${childsubItems.menuLink @ extension='html'}">${childsubItems.menuTitle}</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </nav>
+</sly>

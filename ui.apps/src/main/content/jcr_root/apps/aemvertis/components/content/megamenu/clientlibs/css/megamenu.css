@@ -1,0 +1,46 @@
+ul {
+	position: absolute;
+	margin: 0;
+	background: #0F1035;
+    padding: 10px 20px;
+    border: 1px solid gray;
+}
+
+li {
+    font-size: 18px;
+	display: inline-block;
+	padding: 5px 10px;
+	position: relative;
+    margin: 10px 20px;
+    width: max-content;
+}
+
+li:hover>ul {
+	display: block;
+}
+
+ul ul {
+	position: absolute;
+	display: none;
+	margin: 0;
+	padding: 5px 10px;
+}
+
+ul ul li {
+	display: block;
+}
+
+ul ul ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px dashed #FFF;
+}
