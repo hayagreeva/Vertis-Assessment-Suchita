@@ -7,4 +7,5 @@
     jcr:title="AEM Vertis Fragments"
     sling:configRef="/conf/aemvertis">
     <us/>
+    <aem-vertis-experience-fragment/>
 </jcr:root>

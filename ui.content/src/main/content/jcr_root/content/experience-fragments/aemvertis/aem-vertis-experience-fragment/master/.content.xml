@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-01-24T19:34:47.414+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/aemvertis/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="AEM Vertis Experience Fragment"
+        sling:resourceType="aemvertis/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemvertis/components/container"
+            layout="responsiveGrid">
+            <megamenu
+                jcr:created="{Date}2024-01-24T19:24:51.639+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-01-24T19:34:47.413+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemvertis/components/content/megamenu"
+                megaMenuRootPath="/content/aemvertis/us/en"/>
+        </root>
+    </jcr:content>
+</jcr:root>

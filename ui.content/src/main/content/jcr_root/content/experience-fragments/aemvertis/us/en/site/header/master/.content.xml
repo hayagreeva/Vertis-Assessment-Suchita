@@ -29,6 +29,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemvertis/components/search"
                 searchRoot="/content/aemvertis/us"/>
+            <logo/>
         </root>
     </jcr:content>
 </jcr:root>

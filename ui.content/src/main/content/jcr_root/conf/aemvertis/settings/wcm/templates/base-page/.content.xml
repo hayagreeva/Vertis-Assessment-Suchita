@@ -2,11 +2,10 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2024-01-24T19:24:38.938+05:30"
+        cq:lastModified="{Date}2024-01-24T19:34:24.893+05:30"
         cq:lastModifiedBy="admin"
-        cq:templateType="/conf/aemvertis/settings/wcm/template-types/xf"
-        jcr:description="My Site Experience Fragment Template"
+        cq:templateType="/conf/aemvertis/settings/wcm/template-types/page"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Web Variation"
+        jcr:title="Base Page"
         status="enabled"/>
 </jcr:root>

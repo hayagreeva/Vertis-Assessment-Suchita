@@ -34,10 +34,11 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
+                    enableAssetDelivery="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
                     titleValueFromDAM="true"
@@ -275,10 +276,13 @@
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2024-01-24T19:24:38.931+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Vertis - Content,/apps/aemvertis/components/form/container]">
+                    components="[group:AEM Vertis,group:AEM Vertis - Content,/apps/aemvertis/components/form/container]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -341,4 +345,23 @@
             </page>
         </components>
     </aemvertis>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured"/>
+                <parsys jcr:primaryType="nt:unstructured">
+                    <policy_1706000914239
+                        jcr:lastModified="{Date}2024-01-24T19:34:24.889+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Mega Menu"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:AEM Vertis - Content]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </policy_1706000914239>
+                </parsys>
+            </components>
+        </foundation>
+    </wcm>
 </jcr:root>
